@@ -131,41 +131,59 @@ section a:hover {
     }
 }
 /* =========================================
-   COLOR PALETTE 1: Neon Night City
+   COLOR PALETTE 2.1: Eye-Friendly Hacker
    ========================================= */
 body {
-    background-color: #0b0c10 !important; /* Pitch Dark Blue/Black */
-    color: #c5c6c7 !important; /* Light Grey for readable text */
+    background-color: #0f1411 !important; /* Deep, soft slate-green (easier on eyes than pure black) */
+    color: #c8d6ce !important; /* Soft, highly readable light grey with a hint of green */
 }
+
+/* Headings */
 h1, h2, h3 {
-    color: #00ffcc !important; /* Neon Cyan Headings */
-    text-shadow: 0 0 5px rgba(0, 255, 204, 0.5) !important; /* Cyan Glow */
+    color: #4df05d !important; /* Softened terminal green */
+    font-family: 'Courier New', Courier, monospace !important; /* Typewriter font */
 }
+
+/* Content Boxes */
 section {
-    background-color: #12141a !important; /* Very Dark Slate */
-    border-top: 6px solid #ff00ff !important; /* Neon Magenta Stripe */
-    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2) !important; /* Magenta Glow */
+    background-color: #18201a !important; /* Slightly lighter than the background to create depth */
+    border-top: 5px solid #4df05d !important; 
+    border: 1px solid #233326 !important; /* Subtle inner border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important; /* Soft dark shadow, removed the glowing shadow to reduce eye strain */
 }
+
+/* Text Links */
 a {
-    color: #ff00ff !important; /* Magenta Links */
+    color: #5eff6b !important; /* Brighter green for clickable links */
 }
 a:hover {
-    color: #00ffcc !important; /* Cyan on hover */
-    text-shadow: 0 0 8px rgba(0, 255, 204, 0.8) !important;
+    color: #ffffff !important; 
+    text-shadow: 0 0 8px rgba(94, 255, 107, 0.6) !important; /* Subtle glow only when hovering */
 }
+
+/* Right Sidebar Menu */
 nav {
-    background-color: #050608 !important; /* Black Sidebar */
-    border-left: 2px solid #00ffcc !important; /* Cyan edge line */
+    background-color: #0a0d0b !important; /* Very dark background for the menu to recede */
+    border-left: 1px solid #233326 !important;
 }
-nav a { color: #c5c6c7 !important; }
-nav a:hover, section a:hover, .download-btn:hover {
-    background-color: #ff00ff !important; /* Magenta Button Hover */
-    color: #ffffff !important;
+nav a { 
+    color: #4df05d !important; 
+    font-family: 'Courier New', Courier, monospace !important; 
+}
+nav a:hover {
+    background-color: #4df05d !important; 
+    color: #0a0d0b !important; /* Dark text on green background */
     text-decoration: none !important;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6) !important; /* Button Glow */
 }
+
+/* Buttons (Read more, Download CV) */
 section a, .download-btn {
-    background-color: #00ffcc !important; /* Cyan Buttons */
-    color: #000000 !important; /* Black text on Cyan */
-    font-weight: bold !important;
+    background-color: #1b291f !important; /* Dark green button background */
+    color: #5eff6b !important;
+    border: 1px solid #4df05d !important;
+}
+section a:hover, .download-btn:hover {
+    background-color: #4df05d !important; 
+    color: #0f1411 !important; /* Dark text on hover */
+    box-shadow: 0 0 10px rgba(77, 240, 93, 0.4) !important;
 }

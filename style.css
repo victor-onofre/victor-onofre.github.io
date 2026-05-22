@@ -132,33 +132,33 @@ section a:hover {
 }
 
 /* =========================================
-   COLOR PALETTE 2: Apollo Control Room
+   COLOR PALETTE 3: Vintage Workstation
    ========================================= */
 body {
-    background-color: #F0F4F8 !important; /* Cool Industrial White */
-    color: #101720 !important; /* Off-Black */
+    background-color: #E9E3D6 !important; /* Beige Putty */
+    color: #313131 !important; /* Charcoal */
 }
 h1, h2, h3 {
-    color: #101720 !important; 
+    color: #313131 !important; 
 }
 section {
     background-color: #ffffff !important;
-    border-top: 6px solid #D9381E !important; /* Vintage Red Stripe */
-    box-shadow: 0 4px 10px rgba(16, 23, 32, 0.1) !important;
+    border-top: 6px solid #E16246 !important; /* Terracotta Stripe */
+    box-shadow: 0 4px 10px rgba(49, 49, 49, 0.1) !important;
 }
 a {
-    color: #0074B7 !important; /* Cerulean Links */
+    color: #414C6B !important; /* Muted Indigo Links */
 }
 a:hover {
-    color: #D9381E !important; 
+    color: #E16246 !important; 
 }
 nav, section a, .download-btn {
-    background-color: #003B73 !important; /* Deep Navy */
+    background-color: #3C896D !important; /* Vintage Teal/Green */
     color: #ffffff !important;
 }
 nav a { color: #ffffff !important; }
 nav a:hover, section a:hover, .download-btn:hover {
-    background-color: #D9381E !important; /* Vintage Red Hover */
+    background-color: #E16246 !important; /* Terracotta Hover */
     color: #ffffff !important;
     text-decoration: none !important;
 }

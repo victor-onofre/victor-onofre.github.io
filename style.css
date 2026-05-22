@@ -132,33 +132,33 @@ section a:hover {
 }
 
 /* =========================================
-   COLOR PALETTE 1: 70s Mainframe
+   COLOR PALETTE 2: Apollo Control Room
    ========================================= */
 body {
-    background-color: #F5F1E7 !important; /* Vintage Paper */
-    color: #2D2825 !important; /* Dark Roast */
+    background-color: #F0F4F8 !important; /* Cool Industrial White */
+    color: #101720 !important; /* Off-Black */
 }
 h1, h2, h3 {
-    color: #2D2825 !important; 
+    color: #101720 !important; 
 }
 section {
     background-color: #ffffff !important;
-    border-top: 6px solid #F0B232 !important; /* Retro Gold Stripe */
-    box-shadow: 0 4px 10px rgba(45, 40, 37, 0.1) !important;
+    border-top: 6px solid #D9381E !important; /* Vintage Red Stripe */
+    box-shadow: 0 4px 10px rgba(16, 23, 32, 0.1) !important;
 }
 a {
-    color: #C5523F !important; /* Rust Red Links */
+    color: #0074B7 !important; /* Cerulean Links */
 }
 a:hover {
-    color: #355C7D !important; 
+    color: #D9381E !important; 
 }
 nav, section a, .download-btn {
-    background-color: #355C7D !important; /* Faded Slate Blue */
+    background-color: #003B73 !important; /* Deep Navy */
     color: #ffffff !important;
 }
 nav a { color: #ffffff !important; }
 nav a:hover, section a:hover, .download-btn:hover {
-    background-color: #F0B232 !important; /* Retro Gold Hover */
-    color: #2D2825 !important; /* Dark text on gold hover */
+    background-color: #D9381E !important; /* Vintage Red Hover */
+    color: #ffffff !important;
     text-decoration: none !important;
 }

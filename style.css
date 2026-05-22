@@ -34,3 +34,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Navigation Menu Styles */
+nav {
+    text-align: center;
+    background-color: #0056b3;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    color: #ffd700; /* Changes to a yellow color when you hover */
+    text-decoration: none;
+}

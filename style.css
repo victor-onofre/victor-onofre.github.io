@@ -113,3 +113,20 @@ section a:hover {
     text-decoration: none;
     color: white;
 }
+
+/* Mobile Phone Adjustments */
+@media (max-width: 768px) {
+    body {
+        margin-right: 0; /* Removes the right space on mobile */
+        margin-top: 60px; /* Leaves space at the top instead */
+    }
+    
+    nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row; /* Puts links side-by-side again */
+        justify-content: center;
+        padding-top: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow on the bottom */
+    }
+}

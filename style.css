@@ -54,3 +54,17 @@ nav a:hover {
     color: #ffd700; /* Changes to a yellow color when you hover */
     text-decoration: none;
 }
+
+/* Read More Button Style */
+section a {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+section a:hover {
+    background-color: #003d82;
+    text-decoration: none;
+}

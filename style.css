@@ -132,33 +132,42 @@ section a:hover {
 }
 
 /* =========================================
-   COLOR PALETTE 3: Vintage Workstation
+   COLOR PALETTE 2: Hacker Terminal
    ========================================= */
 body {
-    background-color: #E9E3D6 !important; /* Beige Putty */
-    color: #313131 !important; /* Charcoal */
+    background-color: #000000 !important; /* Pure Black */
+    color: #a8ccaf !important; /* Muted Green for reading */
 }
 h1, h2, h3 {
-    color: #313131 !important; 
+    color: #39ff14 !important; /* Neon Terminal Green */
+    font-family: 'Courier New', Courier, monospace !important; /* Typewriter font */
 }
 section {
-    background-color: #ffffff !important;
-    border-top: 6px solid #E16246 !important; /* Terracotta Stripe */
-    box-shadow: 0 4px 10px rgba(49, 49, 49, 0.1) !important;
+    background-color: #050a05 !important; /* Extremely dark green */
+    border-top: 6px solid #39ff14 !important; /* Neon Green Stripe */
+    border: 1px solid #1a4d1a !important; /* Faint green border around the box */
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.1) !important;
 }
 a {
-    color: #414C6B !important; /* Muted Indigo Links */
+    color: #39ff14 !important; /* Neon Green */
 }
 a:hover {
-    color: #E16246 !important; 
+    color: #ffffff !important; /* Flashes white on hover */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8) !important;
 }
-nav, section a, .download-btn {
-    background-color: #3C896D !important; /* Vintage Teal/Green */
-    color: #ffffff !important;
+nav {
+    background-color: #000000 !important; 
+    border-left: 2px solid #39ff14 !important;
 }
-nav a { color: #ffffff !important; }
+nav a { color: #39ff14 !important; font-family: 'Courier New', Courier, monospace !important; }
 nav a:hover, section a:hover, .download-btn:hover {
-    background-color: #E16246 !important; /* Terracotta Hover */
-    color: #ffffff !important;
+    background-color: #39ff14 !important; 
+    color: #000000 !important; /* Black text on hover */
     text-decoration: none !important;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5) !important;
+}
+section a, .download-btn {
+    background-color: #1a4d1a !important; /* Dark Green Buttons */
+    color: #39ff14 !important;
+    border: 1px solid #39ff14 !important;
 }

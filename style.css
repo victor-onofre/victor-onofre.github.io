@@ -130,3 +130,35 @@ section a:hover {
         box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow on the bottom */
     }
 }
+
+/* =========================================
+   COLOR PALETTE 1: 70s Mainframe
+   ========================================= */
+body {
+    background-color: #F5F1E7 !important; /* Vintage Paper */
+    color: #2D2825 !important; /* Dark Roast */
+}
+h1, h2, h3 {
+    color: #2D2825 !important; 
+}
+section {
+    background-color: #ffffff !important;
+    border-top: 6px solid #F0B232 !important; /* Retro Gold Stripe */
+    box-shadow: 0 4px 10px rgba(45, 40, 37, 0.1) !important;
+}
+a {
+    color: #C5523F !important; /* Rust Red Links */
+}
+a:hover {
+    color: #355C7D !important; 
+}
+nav, section a, .download-btn {
+    background-color: #355C7D !important; /* Faded Slate Blue */
+    color: #ffffff !important;
+}
+nav a { color: #ffffff !important; }
+nav a:hover, section a:hover, .download-btn:hover {
+    background-color: #F0B232 !important; /* Retro Gold Hover */
+    color: #2D2825 !important; /* Dark text on gold hover */
+    text-decoration: none !important;
+}

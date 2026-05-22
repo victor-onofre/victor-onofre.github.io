@@ -131,40 +131,41 @@ section a:hover {
     }
 }
 /* =========================================
-   COLOR PALETTE 3: Megacorp Dystopia
+   COLOR PALETTE 1: Neon Night City
    ========================================= */
 body {
-    background-color: #111111 !important; /* Dark Charcoal */
-    color: #e0e0e0 !important; /* Light Steel Grey */
+    background-color: #0b0c10 !important; /* Pitch Dark Blue/Black */
+    color: #c5c6c7 !important; /* Light Grey for readable text */
 }
 h1, h2, h3 {
-    color: #fcee0a !important; /* Cyberpunk Alert Yellow */
-    text-transform: uppercase !important; /* Makes headings ALL CAPS */
-    letter-spacing: 1px !important;
+    color: #00ffcc !important; /* Neon Cyan Headings */
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.5) !important; /* Cyan Glow */
 }
 section {
-    background-color: #1c1c1c !important; /* Slightly lighter charcoal */
-    border-top: 6px solid #fcee0a !important; /* Yellow Stripe */
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5) !important; /* Hard blocky shadow */
+    background-color: #12141a !important; /* Very Dark Slate */
+    border-top: 6px solid #ff00ff !important; /* Neon Magenta Stripe */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2) !important; /* Magenta Glow */
 }
 a {
-    color: #00e5ff !important; /* Electric Blue Links */
+    color: #ff00ff !important; /* Magenta Links */
 }
 a:hover {
-    color: #fcee0a !important; /* Yellow on hover */
+    color: #00ffcc !important; /* Cyan on hover */
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.8) !important;
 }
 nav {
-    background-color: #0a0a0a !important; /* Almost black */
+    background-color: #050608 !important; /* Black Sidebar */
+    border-left: 2px solid #00ffcc !important; /* Cyan edge line */
 }
-nav a { color: #ffffff !important; }
+nav a { color: #c5c6c7 !important; }
 nav a:hover, section a:hover, .download-btn:hover {
-    background-color: #00e5ff !important; /* Blue Hover */
-    color: #000000 !important;
+    background-color: #ff00ff !important; /* Magenta Button Hover */
+    color: #ffffff !important;
     text-decoration: none !important;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6) !important; /* Button Glow */
 }
 section a, .download-btn {
-    background-color: #fcee0a !important; /* Bright Yellow Buttons */
-    color: #000000 !important; /* Black text */
-    font-weight: 900 !important;
-    border-radius: 0 !important; /* Sharp corners for buttons */
+    background-color: #00ffcc !important; /* Cyan Buttons */
+    color: #000000 !important; /* Black text on Cyan */
+    font-weight: bold !important;
 }

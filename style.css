@@ -200,18 +200,22 @@ section a:hover, .download-btn:hover {
 
 /* Special Class for Plain Text Links */
 a.plain-link {
-    color: inherit !important; /* Makes the link the exact same color as surrounding text */
-    text-shadow: none !important; /* Removes the glowing hacker effect */
-    background-color: transparent !important; /* Removes button backgrounds */
+    color: inherit !important;
+    text-shadow: none !important;
+    background-color: transparent !important;
     font-weight: normal !important;
-    text-decoration: underline !important; /* Adds a standard underline so people know it's clickable */
+    text-decoration: underline !important;
     border: none !important;
+    
+    /* FIX FOR THE GAP: */
+    padding: 0 !important; /* Removes the button cushion */
+    margin: 0 !important; 
+    display: inline !important; /* Forces it to act like normal text instead of a block */
 }
 
 a.plain-link:hover {
     color: inherit !important;
     text-shadow: none !important;
     background-color: transparent !important;
-    text-decoration: none !important; /* Removes the underline when you hover over it */
+    text-decoration: none !important;
 }
-

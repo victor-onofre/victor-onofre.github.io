@@ -265,6 +265,7 @@ a.plain-link:hover {
     font-size: 0.9em;
     font-style: italic;
     min-width: 150px; /* Keeps it neatly separated from the title */
+    padding-right: 30px; /* <--- This adds the space on the right! */
 }
 
 /* Host/Organizer styling */

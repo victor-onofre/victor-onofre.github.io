@@ -219,3 +219,58 @@ a.plain-link:hover {
     background-color: transparent !important;
     text-decoration: none !important;
 }
+
+/* =========================================
+   HACKATHON / CV TIMELINE LAYOUT
+   ========================================= */
+
+/* The container for each hackathon */
+.hackathon-entry {
+    border-left: 2px solid #4df05d; /* Terminal green line on the left */
+    padding-left: 15px;
+    margin-bottom: 35px;
+}
+
+/* Flexbox to put Title on the left, Date/Location on the right */
+.hackathon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures it doesn't break on small mobile screens */
+}
+
+/* Removes default spacing on the heading so it lines up nicely */
+.hackathon-title-group h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* The highlighted award badge */
+.award-badge {
+    background-color: #4df05d; /* Solid green background */
+    color: #0f1411; /* Dark text */
+    padding: 3px 8px;
+    font-family: 'Segoe UI', sans-serif; /* Cleaner font for the badge */
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Date and Location styling */
+.hackathon-meta {
+    text-align: right;
+    color: #88a090; /* Muted grey-green */
+    font-size: 0.9em;
+    font-style: italic;
+    min-width: 150px; /* Keeps it neatly separated from the title */
+}
+
+/* Host/Organizer styling */
+.hackathon-host {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #c8d6ce;
+    font-weight: bold;
+}

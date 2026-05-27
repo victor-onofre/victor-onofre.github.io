@@ -229,6 +229,15 @@ a.plain-link:hover {
     border-left: 2px solid #4df05d; /* Terminal green line on the left */
     padding-left: 15px;
     margin-bottom: 35px;
+    /* NEW: Spacing and horizontal separator */
+    padding-bottom: 30px; /* Space between the text and the bottom line */
+    margin-bottom: 30px; /* Space between the bottom line and the next hackathon */
+    border-bottom: 1px dashed rgba(77, 240, 93, 0.3); /* A faded, dashed terminal green line */
+}
+
+/* NEW: This removes the line from the very LAST hackathon so it looks clean at the bottom of the page */
+.hackathon-entry:last-child {
+    border-bottom: none;
 }
 
 /* Flexbox to put Title on the left, Date/Location on the right */

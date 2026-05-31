@@ -284,3 +284,19 @@ a.plain-link:hover {
     color: #c8d6ce;
     font-weight: bold;
 }
+
+/* =========================================
+   FOOTER & DISCLAIMER
+   ========================================= */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px dashed rgba(77, 240, 93, 0.2); /* Faded green terminal line */
+    color: #6a8a77; /* Muted, dark grey-green so it doesn't distract */
+    font-size: 0.85em; /* Makes the text slightly smaller */
+    font-style: italic;
+    max-width: 800px; /* Keeps it aligned with your main text boxes */
+    margin-left: auto;
+    margin-right: auto;
+}

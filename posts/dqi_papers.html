@@ -1,0 +1,119 @@
+<section>
+    <h2>Decoded Quantum Interferometry (DQI) Reading List</h2>
+    <p>Papers related to DQI.</p>
+
+    <div class="paper-entry">
+        <h3>A. Optimization by Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>Original paper on DQI.</li>
+            <li>Solves max-k-XORSAT with extension on max-LINSAT using LDPC codes.</li>
+            <li>Quantum advantage claim on the Optimal Polynomial Intersection (OPI) problem using Reed-Solomon codes.</li>
+            <li>Analytic bounds for each problem.</li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>B. Algebraic Geometry Codes and Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>Extension to Hermitian codes for OPI problem.</li>
+            <li>Represents a fundamental advantage for quantum implementations: while Reed-Solomon codes require log<sub>2</sub>(n) qubits per field element for block length n, Hermitian codes achieve the same block length using only (2/3)log<sub>2</sub>(n) qubits per element.</li>
+            <li>This decrease in quantum resource requirements becomes increasingly significant as problem sizes grow.</li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>C. Verifiable Quantum Advantage via Optimized DQI Circuits</h3>
+        <p><em>Resources estimation in the quantum advantage regime.</em></p>
+        <ul>
+            <li>Analysis of OPI over Binary Extension Fields.</li>
+            <li>Reed-Solomon codes possess efficient classical decoders, such as the Berlekamp-Massey decoder or the Extended Euclidean Algorithm (EEA). In the paper they introduce 2 distinct compilation strategies for the EEA, each achieving minimal qubit overhead while being tailored for different algorithmic requirements. These strategies are general and offer substantial improvements for other quantum algorithms utilizing the EEA, such as those in elliptic curve cryptography and DQI with EEA-based decoders for other codes like algebraic geometry codes and RS codes with prime fields.</li>
+            <li>Construct end-to-end reversible quantum circuits for the full RS decoder that integrate our optimized EEA modules. The design is compatible with both the explicit and implicit EEA approaches and fully accounts for the resource costs of the subsequent decoding stages—Chien Search and Forney’s algorithm—when operating on the compact, shared-register data structures produced by our EEA implementations.</li>
+            <li>For estimating physical costs, we assume one large rectangular grid of physical qubits with nearest neighbor connections, a uniform gate error rate of 0.1%, a surface code cycle time of 1 microsecond, and a control system reaction time of 10 microseconds. With these assumptions, the imagined physical layout of the algorithm will consist of a compute region using hot storage and a memory region using cold storage. The compute region will store logical qubits “normally", as distance d surface code patches using 2(d+ 1)<sup>2</sup> physical qubits. The cold storage memory region will store qubits more densely, by using 2D yoked surface codes.</li>
+            <li>To summarize, we estimate that solving a classically intractable instance of the OPI problem using DQI requires ≈ 800k physical qubits and ≈ 1 hour of runtime. This estimate assumes a quantum computer with a surface code cycle time of 1 microsecond, a control system reaction time of 10 microseconds, a square grid of qubits with nearest neighbor connectivity, and a uniform depolarizing noise model with a noise strength of 1 error per 1000 gates.</li>
+            <li>Code here: <a href="https://zenodo.org/records/17301475" target="_blank" class="plain-link">https://zenodo.org/records/17301475</a></li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>D. Hamiltonian Decoded Quantum Interferometry (HDQI)</h3>
+        <ul>
+            <li>Generalization of original DQI algorithm.</li>
+            <li>Uses coherent Bell measurements and the symplectic representation of the Pauli group to reduce Gibbs sampling and Hamiltonian optimization to classical decoding and quantum state preparation.</li>
+            <li>Applications:
+                <ul>
+                    <li>Naturally solves a quantum optimization problem, where the objective function corresponds to the energy of H.</li>
+                    <li>HDQI efficiently prepares Gibbs states up to an inverse temperature that scales linearly with the number of efficiently decodable errors on the symplectic code of H. HDQI thus presents a new approach for Gibbs sampling, by mapping this problem to a decoding task.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>E. On the Complexity of Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>DQI is hard to classically simulate, and that the hardness comes from locating an exponentially large hidden subset. This type of hardness is shared by Shor’s algorithm, but the hidden subset here has no apparent group structure.</li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>F. Decoded Quantum Interferometry Requires Structure</h3>
+        <ul>
+            <li>Prove that if the decoding step of DQI corrects up to the efficient decoding threshold for LDPC codes, then DQI is obstructed by a topological feature of the near-optimal space of solutions known as the overlap gap property (OGP) for the MAX-k-XOR-SAT.</li>
+        </ul>
+        <div class="victor-comment">
+            <strong>Victor Comment:</strong> Nice use of OGP from classical optimization.
+        </div>
+    </div>
+
+    <div class="paper-entry">
+        <h3>G. No Quantum Advantage in Decoded Quantum Interferometry for MaxCut</h3>
+        <ul>
+            <li>Show that the instances of MaxCut on which DQI attains a nontrivial asymptotic approximation guarantee are solvable exactly in classical polynomial time.</li>
+        </ul>
+        <div class="victor-comment">
+            <strong>Victor Comment:</strong> The results are in line with the original paper. MaxCut is an special case of MAX-k-XOR-SAT.
+        </div>
+    </div>
+
+    <div class="paper-entry">
+        <h3>H. Towards solving industrial integer linear programs with Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>Apply DQI to an industrial optimization problem in the automotive industry: the vehicle option-package pricing problem.</li>
+            <li>Developing a detailed quantum circuit implementation for belief propagation, a heuristic algorithm for decoding LDPC codes. Simple resource estimation.</li>
+        </ul>
+        <div class="victor-comment">
+            <strong>Victor Comment:</strong> Nice educational resource as a Proof of Concept.
+        </div>
+    </div>
+
+    <div class="paper-entry">
+        <h3>I. Quantum Circuit Design for Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>Concrete quantum circuit implementation of DQI, with a focus on the decoding subroutine.</li>
+        </ul>
+        <div class="victor-comment">
+            <strong>Victor Comment:</strong> Nice education resource. It was the first paper building the circuit.
+        </div>
+    </div>
+
+    <div class="paper-entry">
+        <h3>J. Decoded Quantum Interferometry Under Noise</h3>
+        <ul>
+            <li>Rigorous analysis of DQI under noise, focusing on local depolarizing noise.</li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>K. Quantum advantage from soft decoders</h3>
+        <ul>
+            <li>Provide strong improvements for some instantiations of the OPI problem. The most notable improvements are for the ISIS∞ problem (originating from lattice-based cryptography) on Reed-Solomon codes but we also study different constraints for OPI.</li>
+        </ul>
+    </div>
+
+    <div class="paper-entry">
+        <h3>L. Optimization of Quadratic Constraints by Decoded Quantum Interferometry</h3>
+        <ul>
+            <li>Extend DQI to optimization problems involving quadratic constraints, which we call max QUADSAT.</li>
+        </ul>
+    </div>
+</section>

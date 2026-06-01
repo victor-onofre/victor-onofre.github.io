@@ -300,3 +300,50 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* =========================================
+   PAPER ENTRIES & COMMENTS STYLING
+   ========================================= */
+
+/* Adds a dashed line between papers, like the hackathons */
+.paper-entry {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed rgba(77, 240, 93, 0.2);
+}
+
+.paper-entry:last-child {
+    border-bottom: none;
+}
+
+.paper-entry h3 {
+    margin-bottom: 10px;
+    color: #4df05d; 
+    font-size: 1.2em;
+}
+
+.paper-entry ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.paper-entry li {
+    margin-bottom: 8px; /* Adds breathing room between bullet points */
+}
+
+/* Styling for your personal comments */
+.victor-comment {
+    background-color: #0a0d0b; /* Very dark background to contrast */
+    border-left: 4px solid #4df05d; /* Thick green line on the left */
+    padding: 12px 15px;
+    margin-top: 15px;
+    font-style: italic;
+    color: #a3c2b0; /* Slightly lighter green text */
+    font-size: 0.95em;
+    border-radius: 0 4px 4px 0;
+}
+
+.victor-comment strong {
+    color: #4df05d; /* Highlights "Victor Comment:" in bright green */
+    font-style: normal;
+}

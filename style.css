@@ -322,13 +322,17 @@ footer {
     font-size: 1.2em;
 }
 
+/* Make bullet points easier to digest */
 .paper-entry ul {
-    margin-top: 5px;
-    padding-left: 20px;
+    margin-top: 10px;
+    padding-left: 25px;
 }
 
 .paper-entry li {
-    margin-bottom: 8px; /* Adds breathing room between bullet points */
+    margin-bottom: 14px; /* More space between bullets */
+    line-height: 1.7; /* Taller line height for wrapped text */
+    font-size: 1.05em; /* Slightly larger, more readable text */
+    color: #d1e0d7; /* Slightly brighter text color to pop off the dark background */
 }
 
 /* Styling for your personal comments */
@@ -346,4 +350,21 @@ footer {
 .victor-comment strong {
     color: #4df05d; /* Highlights "Victor Comment:" in bright green */
     font-style: normal;
+}
+
+/* Constrain text width for optimal reading */
+main {
+    max-width: 850px !important; /* Forces the box to stop growing on wide screens */
+    margin: 0 auto !important; /* Centers the box on the screen */
+}
+
+/* Add padding inside the section so text doesn't touch the borders */
+section {
+    padding: 35px 45px !important;
+}
+
+/* Fix the "Back to posts" link alignment */
+main > p > a {
+    display: inline-block;
+    margin-bottom: 20px;
 }

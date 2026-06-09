@@ -298,10 +298,11 @@ a.plain-link:hover {
 
 /* ---- "Under Construction" barricade banner ---- */
 .under-construction {
+    display: flex;
+    justify-content: center;
     max-width: 720px;
     margin: 0 auto 18px;
     padding: 10px;
-    text-align: center;
     font-family: 'Comic Sans MS', 'Times New Roman', cursive;
     font-weight: bold;
     font-size: 18px;
@@ -316,8 +317,7 @@ a.plain-link:hover {
     border: 4px ridge #ffcc00;
 }
 
-.under-construction span {
-    display: inline-block;
+.under-construction > span {
     padding: 6px 14px;
     background-color: #ffcc00;
     border: 2px solid #000000;

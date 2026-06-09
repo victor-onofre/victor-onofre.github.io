@@ -314,24 +314,22 @@ a.plain-link:hover {
         #000000 18px,
         #000000 36px
     );
+    background-size: 51px 51px; /* sqrt(2) * 36px, so the loop is seamless */
     border: 4px ridge #ffcc00;
+    animation: barricade-slide 2s linear infinite;
+}
+
+/* Stripes drift like a moving construction conveyor */
+@keyframes barricade-slide {
+    to {
+        background-position: 51px 0;
+    }
 }
 
 .under-construction > span {
     padding: 6px 14px;
     background-color: #ffcc00;
     border: 2px solid #000000;
-}
-
-/* Classic <blink> effect, recreated with CSS */
-.blink {
-    animation: blink 1s steps(2, start) infinite;
-}
-
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
 }
 
 /* ---- Hit counter (odometer look) ---- */

@@ -296,6 +296,65 @@ a.plain-link:hover {
     background-color: #ffff00;
 }
 
+/* ---- "Under Construction" barricade banner ---- */
+.under-construction {
+    max-width: 720px;
+    margin: 0 auto 18px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Times New Roman', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffcc00,
+        #ffcc00 18px,
+        #000000 18px,
+        #000000 36px
+    );
+    border: 4px ridge #ffcc00;
+}
+
+.under-construction span {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #ffcc00;
+    border: 2px solid #000000;
+}
+
+/* Classic <blink> effect, recreated with CSS */
+.blink {
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+/* ---- Hit counter (odometer look) ---- */
+.visitor-counter {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: #00ffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.visitor-counter p {
+    margin: 0 0 8px;
+}
+
+.visitor-counter img {
+    background-color: #000000;
+    border: 3px inset #888888;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+
 /* ---- Footer / disclaimer ---- */
 footer {
     text-align: center;

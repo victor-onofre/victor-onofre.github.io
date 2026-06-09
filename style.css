@@ -1,372 +1,326 @@
+/* =========================================================
+   VICTOR ONOFRE — GEOCITIES / 90s PERSONAL HOMEPAGE THEME
+   Pure CSS. Works with the existing HTML on every page.
+   ========================================================= */
+
+/* ---- Starfield background (no image asset needed) ---- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0; 
-    padding: 0;
-    margin-right: 200px; /* Leaves 200px of space on the right for the menu */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px 0 40px;
+
+    background-color: #000033; /* deep space navy */
+    background-image:
+        radial-gradient(#ffffff 1px, transparent 1px),
+        radial-gradient(#ffffaa 1px, transparent 1px),
+        radial-gradient(#aaccff 1px, transparent 1px);
+    background-size: 90px 90px, 140px 140px, 60px 60px;
+    background-position: 0 0, 45px 70px, 20px 35px;
 }
 
+/* ---- Header: big centered title ---- */
 header {
     text-align: center;
-    padding: 40px 0;
-    border-bottom: 2px solid #ddd;
+    padding: 10px 0 20px;
+    border: none;
 }
 
 h1 {
-    color: #0056b3;
+    font-family: 'Comic Sans MS', 'Times New Roman', cursive;
+    font-size: 48px;
+    color: #ffff00; /* bright yellow */
+    text-shadow: 2px 2px 0 #ff00ff, 4px 4px 0 #000000; /* magenta + drop shadow */
+    margin: 10px 0;
 }
 
-section {
-    margin-top: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Navigation Menu Styles - Right Sidebar */
-nav {
-    position: fixed; /* Sticks the menu to the screen */
-    top: 0; /* Starts at the very top */
-    right: 0; /* Sticks to the right edge */
-    width: 200px; /* Width of the sidebar */
-    height: 100%; /* Stretches all the way down */
-    background-color: #0056b3;
-    display: flex;
-    flex-direction: column; /* Stacks the links vertically */
-    padding-top: 50px; /* Pushes the links down a bit from the top */
-    box-shadow: -2px 0 5px rgba(0,0,0,0.2); /* Adds a nice shadow on the left edge */
-}
-
-nav a {
-    color: white;
+header p {
+    color: #00ffff;
     font-weight: bold;
-    padding: 15px 20px;
-    text-decoration: none;
-    display: block; /* Makes the whole row clickable */
     font-size: 18px;
 }
 
-nav a:hover {
-    background-color: #003d82; /* Darkens the whole row when hovered */
-    color: #ffd700;
+/* ---- Main column: classic centered fixed width ---- */
+main {
+    max-width: 720px;
+    margin: 0 auto;
 }
 
-/* Read More Button Style */
-section a {
-    background-color: #0056b3;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
+/* ---- Content boxes as beveled "silver" panels ---- */
+section,
+.hackathon-entry {
+    max-width: 720px;
+    margin: 18px auto;
+    padding: 18px 22px;
+    background-color: #c0c0c0; /* Windows 95 silver */
+    color: #000000;
+    border: 4px ridge #dfdfdf; /* beveled outset look */
+    border-radius: 0;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+section p,
+.hackathon-entry p {
+    color: #000000;
+}
+
+/* ---- Headings inside content ---- */
+h2 {
+    font-family: 'Comic Sans MS', 'Times New Roman', cursive;
+    color: #cc0000;
+    text-align: center;
+    border-bottom: 2px dotted #000080;
+    padding-bottom: 6px;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000080;
+}
+
+/* ---- Links: the iconic 90s blue / purple underlined ---- */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #ff0000;
+    background-color: #ffff00;
+}
+
+/* ---- Navigation: horizontal row of beveled buttons ---- */
+nav {
+    position: static;       /* kill the old fixed sidebar */
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    background: transparent;
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 8px 0;
+}
+
+nav a {
     display: inline-block;
-}
-
-section a:hover {
-    background-color: #003d82;
+    margin: 4px 3px;
+    padding: 6px 16px;
+    color: #000080;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
     text-decoration: none;
+    background-color: #c0c0c0;
+    border: 3px outset #ffffff; /* classic raised button */
 }
 
-/* CV Page Styles */
+nav a:hover {
+    color: #cc0000;
+    background-color: #d8d8d8;
+    border-style: inset; /* "pressed" on hover */
+}
+
+/* ---- "Read more" / button-style links inside sections ---- */
+section a,
+.download-btn {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #c0c0c0;
+    color: #000080;
+    border: 3px outset #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover,
+.download-btn:hover {
+    border-style: inset;
+    color: #cc0000;
+    background-color: #d8d8d8;
+}
+
+/* Back-to-posts link at top of a post */
+main > p > a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* ---- Horizontal rules ---- */
+hr {
+    border: none;
+    border-top: 3px ridge #808080;
+    margin: 16px 0;
+}
+
+/* ---- CV page ---- */
 .job {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    border-bottom: 2px dashed #000080;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .job:last-child {
-    border-bottom: none; /* Removes the line after the last job */
+    border-bottom: none;
 }
 
 .job h3 {
     margin-bottom: 0;
-    color: #333;
+    color: #000080;
 }
 
 .job p {
-    margin-top: 5px;
-    color: #666;
+    margin-top: 4px;
+    color: #333333;
 }
 
-/* Download PDF Button */
-.download-btn {
-    background-color: #28a745; /* Green color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-.download-btn:hover {
-    background-color: #218838;
-    text-decoration: none;
-    color: white;
-}
-
-/* Mobile Phone Adjustments */
-@media (max-width: 768px) {
-    body {
-        margin-right: 0; /* Removes the right space on mobile */
-        margin-top: 60px; /* Leaves space at the top instead */
-    }
-    
-    nav {
-        width: 100%;
-        height: auto;
-        flex-direction: row; /* Puts links side-by-side again */
-        justify-content: center;
-        padding-top: 0;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow on the bottom */
-    }
-}
-/* =========================================
-   COLOR PALETTE 2.1: Eye-Friendly Hacker
-   ========================================= */
-body {
-    background-color: #0f1411 !important; /* Deep, soft slate-green (easier on eyes than pure black) */
-    color: #c8d6ce !important; /* Soft, highly readable light grey with a hint of green */
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #4df05d !important; /* Softened terminal green */
-    font-family: 'Courier New', Courier, monospace !important; /* Typewriter font */
-}
-
-/* Content Boxes */
-section {
-    background-color: #18201a !important; /* Slightly lighter than the background to create depth */
-    border-top: 5px solid #4df05d !important; 
-    border: 1px solid #233326 !important; /* Subtle inner border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important; /* Soft dark shadow, removed the glowing shadow to reduce eye strain */
-}
-
-/* Text Links */
-a {
-    color: #5eff6b !important; /* Brighter green for clickable links */
-}
-a:hover {
-    color: #ffffff !important; 
-    text-shadow: 0 0 8px rgba(94, 255, 107, 0.6) !important; /* Subtle glow only when hovering */
-}
-
-/* Right Sidebar Menu */
-nav {
-    background-color: #0a0d0b !important; /* Very dark background for the menu to recede */
-    border-left: 1px solid #233326 !important;
-}
-nav a { 
-    color: #4df05d !important; 
-    font-family: 'Courier New', Courier, monospace !important; 
-}
-nav a:hover {
-    background-color: #4df05d !important; 
-    color: #0a0d0b !important; /* Dark text on green background */
-    text-decoration: none !important;
-}
-
-/* Buttons (Read more, Download CV) */
-section a, .download-btn {
-    background-color: #1b291f !important; /* Dark green button background */
-    color: #5eff6b !important;
-    border: 1px solid #4df05d !important;
-}
-section a:hover, .download-btn:hover {
-    background-color: #4df05d !important; 
-    color: #0f1411 !important; /* Dark text on hover */
-    box-shadow: 0 0 10px rgba(77, 240, 93, 0.4) !important;
-}
-
-/* CV Page - Specific Skill Item Styling */
 .cv-skill-item {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .cv-skill-item h3 {
-    margin-bottom: 5px;
-    color: #4df05d; /* Or whatever your heading color is */
+    margin-bottom: 4px;
+    color: #000080;
 }
 
-/* Special Class for Plain Text Links */
-a.plain-link {
-    color: inherit !important;
-    text-shadow: none !important;
-    background-color: transparent !important;
-    font-weight: normal !important;
-    text-decoration: underline !important;
-    border: none !important;
-    
-    /* FIX FOR THE GAP: */
-    padding: 0 !important; /* Removes the button cushion */
-    margin: 0 !important; 
-    display: inline !important; /* Forces it to act like normal text instead of a block */
-}
-
-a.plain-link:hover {
-    color: inherit !important;
-    text-shadow: none !important;
-    background-color: transparent !important;
-    text-decoration: none !important;
-}
-
-/* =========================================
-   HACKATHON / CV TIMELINE LAYOUT
-   ========================================= */
-
-/* The container for each hackathon */
-.hackathon-entry {
-    border-left: 2px solid #4df05d; /* Terminal green line on the left */
-    padding-left: 15px;
-    margin-bottom: 35px;
-    /* NEW: Spacing and horizontal separator */
-    padding-bottom: 30px; /* Space between the text and the bottom line */
-    margin-bottom: 30px; /* Space between the bottom line and the next hackathon */
-    border-bottom: 1px dashed rgba(77, 240, 93, 0.3); /* A faded, dashed terminal green line */
-}
-
-/* NEW: This removes the line from the very LAST hackathon so it looks clean at the bottom of the page */
-.hackathon-entry:last-child {
-    border-bottom: none;
-}
-
-/* Flexbox to put Title on the left, Date/Location on the right */
+/* ---- Hackathon timeline entries ---- */
 .hackathon-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Ensures it doesn't break on small mobile screens */
+    flex-wrap: wrap;
 }
 
-/* Removes default spacing on the heading so it lines up nicely */
 .hackathon-title-group h3 {
     margin-top: 0;
     margin-bottom: 5px;
     display: inline-block;
+    color: #000080;
 }
 
-/* The highlighted award badge */
 .award-badge {
-    background-color: #4df05d; /* Solid green background */
-    color: #0f1411; /* Dark text */
-    padding: 3px 8px;
-    font-family: 'Segoe UI', sans-serif; /* Cleaner font for the badge */
-    font-size: 0.85em;
+    background-color: #ffff00;
+    color: #cc0000;
+    padding: 2px 8px;
+    border: 2px outset #ffffff;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 0.8em;
     font-weight: bold;
     margin-left: 10px;
     vertical-align: middle;
 }
 
-/* Date and Location styling */
 .hackathon-meta {
     text-align: right;
-    color: #88a090; /* Muted grey-green */
+    color: #333333;
     font-size: 0.9em;
     font-style: italic;
-    min-width: 150px; /* Keeps it neatly separated from the title */
-    padding-right: 30px; /* <--- This adds the space on the right! */
+    min-width: 150px;
 }
 
-/* Host/Organizer styling */
 .hackathon-host {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #c8d6ce;
+    color: #000000;
     font-weight: bold;
 }
 
-/* =========================================
-   FOOTER & DISCLAIMER
-   ========================================= */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 1px dashed rgba(77, 240, 93, 0.2); /* Faded green terminal line */
-    color: #6a8a77; /* Muted, dark grey-green so it doesn't distract */
-    font-size: 0.85em; /* Makes the text slightly smaller */
-    font-style: italic;
-    max-width: 800px; /* Keeps it aligned with your main text boxes */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* =========================================
-   PAPER ENTRIES & COMMENTS STYLING
-   ========================================= */
-
-/* Adds a dashed line between papers, like the hackathons */
-/* Card Layout for Papers */
+/* ---- Paper reading-list cards (blog posts) ---- */
 .paper-entry {
-    background-color: #121814; /* A slightly darker/different shade than the main background */
-    border: 1px solid #233326; /* Subtle border around the whole card */
-    border-left: 3px solid #4df05d; /* Green accent line on the left */
-    padding: 20px 25px; /* Space inside the card */
-    margin-bottom: 30px; /* Space between cards */
-    border-radius: 6px; /* Slightly rounded corners */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    background-color: #ffffcc; /* legal-pad yellow "note paper" */
+    color: #000000;
+    border: 3px ridge #dfdf9f;
+    border-left: 6px solid #cc0000;
+    padding: 16px 22px;
+    margin-bottom: 24px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
-/* We don't need the dashed line anymore if we use cards, so delete .paper-entry:last-child */
 .paper-entry h3 {
     margin-bottom: 10px;
-    color: #4df05d; 
+    color: #cc0000;
     font-size: 1.2em;
 }
 
-/* Make bullet points easier to digest */
 .paper-entry ul {
     margin-top: 10px;
     padding-left: 25px;
 }
 
 .paper-entry li {
-    margin-bottom: 14px; /* More space between bullets */
-    line-height: 1.7; /* Taller line height for wrapped text */
-    font-size: 1.05em; /* Slightly larger, more readable text */
-    color: #d1e0d7; /* Slightly brighter text color to pop off the dark background */
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #000000;
 }
 
-/* Styling for your personal comments */
+/* ---- Victor's personal comment callouts ---- */
 .victor-comment {
-    background-color: #0a0d0b; /* Very dark background to contrast */
-    border-left: 4px solid #4df05d; /* Thick green line on the left */
+    background-color: #ffffaa; /* sticky-note yellow */
+    border: 2px dashed #cc0000;
+    border-left: 6px solid #cc0000;
     padding: 12px 15px;
     margin-top: 15px;
     font-style: italic;
-    color: #a3c2b0; /* Slightly lighter green text */
-    font-size: 0.95em;
-    border-radius: 0 4px 4px 0;
+    color: #333333;
 }
 
 .victor-comment strong {
-    color: #4df05d; /* Highlights "Victor Comment:" in bright green */
+    color: #cc0000;
     font-style: normal;
 }
 
-/* Constrain text width for optimal reading */
-main {
-    max-width: 850px !important; /* Forces the box to stop growing on wide screens */
-    margin: 0 auto !important; /* Centers the box on the screen */
+/* ---- Plain inline link (overrides the button styling) ---- */
+a.plain-link {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    color: #0000ee;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
-/* Add padding inside the section so text doesn't touch the borders */
-section {
-    padding: 35px 45px !important;
+a.plain-link:visited {
+    color: #551a8b;
 }
 
-/* Fix the "Back to posts" link alignment */
-main > p > a {
-    display: inline-block;
-    margin-bottom: 20px;
+a.plain-link:hover {
+    color: #ff0000;
+    background-color: #ffff00;
+}
+
+/* ---- Footer / disclaimer ---- */
+footer {
+    text-align: center;
+    margin: 40px auto 0;
+    padding: 16px;
+    max-width: 720px;
+    color: #aaaaaa;
+    font-size: 0.85em;
+    font-style: italic;
+    border-top: 2px groove #808080;
+}
+
+/* ---- Mobile: stack the buttons, keep it readable ---- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 0 30px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    section,
+    .hackathon-entry,
+    main {
+        max-width: 92%;
+    }
 }

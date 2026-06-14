@@ -301,9 +301,27 @@ hr {
 }
 
 .book-rating {
-    color: #cc8800;
+    --rating: 0; /* 0 to 5, halves allowed e.g. 3.5 */
+    display: inline-block;
+    position: relative;
     font-style: normal;
-    letter-spacing: 2px;
+    line-height: 1;
+    color: #b0b0b0; /* empty-star grey */
+}
+
+.book-rating::before {
+    content: "★★★★★";
+}
+
+.book-rating::after {
+    content: "★★★★★";
+    color: #cc8800; /* filled-star gold */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(var(--rating) / 5 * 100%);
 }
 
 /* ---- Plain inline link (overrides the button styling) ---- */

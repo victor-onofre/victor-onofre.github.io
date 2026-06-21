@@ -276,6 +276,17 @@ hr {
 }
 
 /* ---- Book opinion cards ---- */
+.book-genre {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    color: #000000;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 4px;
+}
+
 .book-entry {
     background-color: #fff0f5; /* soft "paperback" pink-white */
     color: #000000;

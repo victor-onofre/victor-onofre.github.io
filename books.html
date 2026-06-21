@@ -46,11 +46,13 @@
             <p>Opinions on some of the books I've read.</p>
         </section>
 
-        <!-- Books are grouped by genre, each group sorted by rating (highest first).
-             Duplicate a .book-entry block for each new book and drop it in the matching group.
+        <!-- Books are grouped by genre inside collapsible <details> blocks (click the heading to
+             expand/collapse). Each group is sorted by rating (highest first). Duplicate a
+             .book-entry block for each new book and drop it in the matching group.
              Fill in the rating (★ filled / ☆ empty) and your opinion. -->
 
-        <h3 class="book-genre">Science Fiction &amp; Fantasy</h3>
+        <details class="genre-group" open>
+        <summary class="book-genre">Science Fiction &amp; Fantasy</summary>
 
         <div class="book-entry">
             <h3>The Dispossessed</h3>
@@ -117,8 +119,10 @@
             <p class="book-meta">by Alastair Reynolds &middot; <span class="book-rating" style="--rating: 2.5"></span></p>
             <p>....</p>
         </div>
+        </details>
 
-        <h3 class="book-genre">Non-fiction</h3>
+        <details class="genre-group" open>
+        <summary class="book-genre">Non-fiction</summary>
 
         <div class="book-entry">
             <h3>Chip War: The Fight for the World's Most Critical Technology</h3>
@@ -149,14 +153,17 @@
             <p class="book-meta">by David Leigh and Luke Harding &middot; <span class="book-rating" style="--rating: 2"></span></p>
             <p>....</p>
         </div>
+        </details>
 
-        <h3 class="book-genre">Literary Fiction</h3>
+        <details class="genre-group" open>
+        <summary class="book-genre">Literary Fiction</summary>
 
         <div class="book-entry">
             <h3>Stoner</h3>
             <p class="book-meta">by John Williams &middot; <span class="book-rating" style="--rating: 3"></span></p>
             <p>....</p>
         </div>
+        </details>
 
 
         <section>

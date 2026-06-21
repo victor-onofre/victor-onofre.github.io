@@ -276,8 +276,11 @@ hr {
 }
 
 /* ---- Book opinion cards ---- */
-.book-genre {
+.genre-group {
     margin-top: 32px;
+}
+
+.book-genre {
     margin-bottom: 14px;
     color: #000000;
     font-size: 1.05em;
@@ -285,6 +288,30 @@ hr {
     letter-spacing: 2px;
     border-bottom: 2px solid #cc0000;
     padding-bottom: 4px;
+    cursor: pointer;
+    list-style: none; /* hide default disclosure marker (Firefox) */
+    user-select: none;
+}
+
+.book-genre::-webkit-details-marker {
+    display: none; /* hide default disclosure marker (Safari/Chrome) */
+}
+
+.book-genre::before {
+    content: "\25B6"; /* ▶ collapsed */
+    display: inline-block;
+    margin-right: 10px;
+    color: #cc0000;
+    font-size: 0.8em;
+    transition: transform 0.15s ease;
+}
+
+.genre-group[open] > .book-genre::before {
+    transform: rotate(90deg); /* ▼ expanded */
+}
+
+.book-genre:hover {
+    color: #cc0000;
 }
 
 .book-entry {

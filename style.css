@@ -368,6 +368,26 @@ hr {
     width: calc(var(--rating) / 5 * 100%);
 }
 
+/* ---- Animated QFT photo in About Me ---- */
+.qft-photo {
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.qft-photo img {
+    max-width: 100%;
+    height: auto;
+    border: 3px inset #ffffff;
+}
+
+.qft-photo figcaption {
+    max-width: 492px;
+    margin: 6px auto 0;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #333333;
+}
+
 /* ---- Plain inline link (overrides the button styling) ---- */
 a.plain-link {
     display: inline;
